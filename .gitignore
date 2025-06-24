@@ -1,1 +1,29 @@
+# Ignora fisierele specifice sistemelor de operare
+.DS_Store        # macOS
+Thumbs.db        # Windows
+Desktop.ini      # Windows
 
+# Ignora folderele si fisierele generate de Python
+__pycache__/     # Fisiere bytecode Python
+*.pyc            # Fisiere bytecode Python
+*.pyd            # Module Python din C/C++
+*.so             # Module Python compilate
+venv/            # Folderul mediului virtual (daca folosesti venv)
+.env             # Fisiere pentru variabile de mediu (unde ai putea stoca chei, etc.)
+
+# Ignora fisierele generate de Jupyter/Colab
+.ipynb_checkpoints/ # Checkpoints generate de Jupyter/Colab
+
+# Ignora fisierele mari sau sensibile specifice proiectului tau IDS
+# Setul de date CICIDS 2017 - NICIODATA nu urca un dataset atat de mare pe GitHub
+data/                 # Ignora tot folderul 'data' pentru a preveni incarcarea accidentala a datasetului
+
+# Modele antrenate - Poti alege sa le ignori sau nu.
+# Daca modelul tau este FOARTE mare si vrei ca utilizatorii sa-l antreneze singuri, ignora-l.
+# Daca modelul tau este de dimensiuni rezonabile si vrei sa fie gata de utilizare, NU-l ignora.
+# models/*.joblib      # Ignora toate fisierele .joblib din folderul models
+# models/*.pkl         # Ignora toate fisierele .pkl din folderul models
+
+# Ignora output-uri si log-uri (daca le generezi)
+*.log
+*.out
