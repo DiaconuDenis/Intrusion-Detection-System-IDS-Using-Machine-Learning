@@ -41,3 +41,6 @@ First, clone the project repository to your local machine:
 ```bash
 git clone [https://github.com/DiaconuDenis/Intrusion-Detection-System.git](https://github.com/DiaconuDenis/Intrusion-Detection-System.git)
 cd Intrusion-Detection-System
+
+### 2. Download the CICIDS 2017 Dataset
+  https://www.kaggle.com/datasets/chethuhn/network-intrusion-dataset?resource=download
